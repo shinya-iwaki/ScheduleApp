@@ -253,7 +253,7 @@ class _CalendarState extends State<Calendar> {
             child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
 
-              Text("Flutter応用ScheduleApp", style: Theme.of(context).primaryTextTheme.headline1),
+              Text("Schedule App", style: Theme.of(context).primaryTextTheme.headline1),
               Consumer<ThemeNotifier>(
                   builder: (context, notifier, child) => IconButton(icon: notifier.isDarkTheme ? FaIcon(FontAwesomeIcons.moon, size: 20, color: Colors.white,) : Icon(Icons.wb_sunny), onPressed: () => {notifier.toggleTheme()}))
             ],),
