@@ -113,7 +113,7 @@ class _CalendarState extends State<Calendar> {
                 ],
               ),
               child: Column(
-                mainAxisSize: MainAxisSize.min, // To make the card compact
+                mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   SizedBox(height: 16.0),
                   Text("スケジュール追加", style: GoogleFonts.montserrat(
@@ -162,7 +162,6 @@ class _CalendarState extends State<Calendar> {
     Navigator.pop(context);
   }
 
-  // Delete doesnt refresh yet, thats it, then done!
   void _deleteEvent(String s){
     List<CalendarItem> d = _data.where((element) => element.name == s).toList();
     if(d.length == 1){
@@ -246,7 +245,7 @@ class _CalendarState extends State<Calendar> {
     return Scaffold(
       backgroundColor: Theme.of(context).primaryColor,
       body:  ListView(
-        //crossAxisAlignment: CrossAxisAlignment.start,
+
         children: <Widget>[
           Container(
             padding: EdgeInsets.all(15),
